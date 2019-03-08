@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UsersController">
+   <children>
+      <TableView fx:id="tableView" layoutX="-2.0" layoutY="6.0" prefHeight="399.0" prefWidth="682.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="96.80001831054688" text="Username" />
+          <TableColumn fx:id="passwordColumn" prefWidth="93.60000610351562" text="Password" />
+            <TableColumn fx:id="permissionColumn" prefWidth="91.199951171875" text="Permission" />
+            <TableColumn fx:id="fnameColumn" prefWidth="128.0" text="First name" />
+            <TableColumn fx:id="lnameColumn" prefWidth="140.800048828125" text="Last name" />
+            <TableColumn fx:id="emailColumn" prefWidth="175.20001220703125" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

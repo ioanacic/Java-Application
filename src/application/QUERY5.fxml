@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="371.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QUERY5">
+   <columns>
+      <TableColumn fx:id="clientColumn" prefWidth="134.40002745389938" text="Client" />
+      <TableColumn fx:id="serviceColumn" prefWidth="121.60002136230469" text="Service" />
+      <TableColumn fx:id="beauticianColumn" prefWidth="132.00006103515625" text="Beautician" />
+      <TableColumn fx:id="dateColumn" prefWidth="106.39990234375" text="Date" />
+      <TableColumn fx:id="hourColumn" prefWidth="116.0" text="Hour" />
+   </columns>
+</TableView>

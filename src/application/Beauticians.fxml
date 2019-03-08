@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BeauticiansController">
+   <children>
+      <TableView fx:id="tableView" layoutX="188.0" layoutY="58.0" prefHeight="400.0" prefWidth="449.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="136.79999387264252" text="First name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="152.79998779296875" text="Last name" />
+            <TableColumn fx:id="phoneColumn" prefWidth="158.5999755859375" text="Phone number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

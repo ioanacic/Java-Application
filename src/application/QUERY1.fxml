@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="290.0" prefWidth="1271.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QUERY1">
+   <columns>
+      <TableColumn fx:id="firstNameColumn" prefWidth="91.99999713897705" text="First name" />
+      <TableColumn fx:id="lastNameColumn" prefWidth="103.99996948242188" text="Last name" />
+      <TableColumn fx:id="cnpColumn" prefWidth="135.99998474121094" text="CNP" />
+      <TableColumn fx:id="streetColumn" prefWidth="101.60000610351562" text="Street" />
+      <TableColumn fx:id="numberColumn" prefWidth="71.20004272460938" text="Number" />
+      <TableColumn fx:id="cityColumn" prefWidth="92.00006103515625" text="City" />
+      <TableColumn fx:id="countyColumn" prefWidth="110.4000244140625" text="County" />
+      <TableColumn fx:id="sexColumn" prefWidth="52.800048828125" text="Sex" />
+      <TableColumn fx:id="phoneColumn" prefWidth="103.99993896484375" text="Phone" />
+      <TableColumn fx:id="employmentDateColumn" prefWidth="158.39990234375" text="Date of employment" />
+      <TableColumn fx:id="birthDateColumn" prefWidth="123.2001953125" text="Date of birth" />
+      <TableColumn fx:id="salaryColumn" prefWidth="120.79997558593755" text="Salary (RON)" />
+   </columns>
+</TableView>

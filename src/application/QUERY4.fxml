@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="710.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QUERY4">
+   <columns>
+      <TableColumn fx:id="nameColumn" prefWidth="146.39999389648438" text="Service name" />
+      <TableColumn fx:id="categColumn" prefWidth="119.20004272460938" text="Category" />
+      <TableColumn fx:id="timeColumn" prefWidth="122.4000244140625" text="Time (min)" />
+      <TableColumn fx:id="priceColumn" prefWidth="130.5999755859375" text="Price (RON)" />
+   </columns>
+</TableView>

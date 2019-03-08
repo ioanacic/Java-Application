@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="474.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistoryController">
+   <children>
+      <TableView fx:id="tableView" layoutX="323.0" layoutY="50.0" onMouseClicked="#hideLabel" prefHeight="383.0" prefWidth="507.0" AnchorPane.bottomAnchor="91.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="serviceColumn" prefWidth="124.0" text="Service" />
+          <TableColumn fx:id="beauticianColumn" prefWidth="135.1999969482422" text="Beautician" />
+            <TableColumn fx:id="dateColumn" prefWidth="124.79998779296875" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="122.20001220703125" text="Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="43.0" layoutY="413.0" text="How much did I spend?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="findOut" layoutX="293.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#findOutButtonPressed" text="Find out" />
+      <Label fx:id="findOutLabel" layoutX="396.0" layoutY="417.0" text="Label" visible="false" />
+      <Label fx:id="ronLabel" layoutX="431.0" layoutY="417.0" text=" RON" visible="false" />
+   </children>
+</AnchorPane>

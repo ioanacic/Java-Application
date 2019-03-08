@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="253.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <PasswordField fx:id="passwordTextField" layoutX="46.0" layoutY="112.0" onKeyTyped="#hideErrorPassword" text="parola" />
+      <TextField fx:id="usernameTextField" layoutX="46.0" layoutY="57.0" onKeyTyped="#hideErrorUser" text="admin" />
+      <Label layoutX="46.0" layoutY="39.0" text="Username" />
+      <Label layoutX="46.0" layoutY="94.0" text="Password" />
+      <Button layoutX="149.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#loginButtonPressed" text="Login" />
+      <Label fx:id="errorLabelUser" layoutX="250.0" layoutY="56.0" prefHeight="26.0" prefWidth="156.0" text="This user does not exist!" textAlignment="RIGHT" textFill="#ff0707" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="284.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#registerButtonPressed" text="Register" />
+      <Label fx:id="errorLabelPassword" layoutX="289.0" layoutY="117.0" text="Wrong password!" textAlignment="RIGHT" textFill="#fa0000" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

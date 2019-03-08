@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClientsControllerADMIN">
+   <children>
+      <TableView fx:id="tableView" layoutX="25.0" layoutY="17.0" onMouseClicked="#hideLabel" prefHeight="322.0" prefWidth="1170.0">
+        <columns>
+          <TableColumn fx:id="fnameColumn" prefWidth="120.00002765655518" text="First name" />
+          <TableColumn fx:id="lnameColumn" prefWidth="130.40003967285156" text="Last name" />
+            <TableColumn fx:id="streetColumn" prefWidth="112.79998779296875" text="Street" />
+            <TableColumn fx:id="numberColumn" prefWidth="68.0" text="Number" />
+            <TableColumn fx:id="cityColumn" prefWidth="99.20001220703125" text="City" />
+            <TableColumn fx:id="countyColumn" prefWidth="105.5999755859375" text="County" />
+            <TableColumn fx:id="sexColumn" prefWidth="68.0" text="Sex" />
+            <TableColumn fx:id="phoneColumn" prefWidth="120.0" text="Phone" />
+            <TableColumn fx:id="registerDateColumn" prefWidth="167.199951171875" text="Date of registration" />
+            <TableColumn fx:id="birthDateColumn" minWidth="0.0" prefWidth="176.00003662109384" text="Date of birth" />
+        </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="361.0" text="Insert a new client" textFill="#770d44">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="38.0" layoutY="391.0" prefHeight="170.0" prefWidth="316.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.20001220703125" minWidth="10.0" prefWidth="95.99998168945312" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.19998168945312" minWidth="10.0" prefWidth="196.80001831054688" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="First name" />
+            <Label text="Last name" GridPane.rowIndex="1" />
+            <Label text="Street" GridPane.rowIndex="2" />
+            <Label text="Number" GridPane.rowIndex="3" />
+            <TextField fx:id="fnameTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" />
+            <TextField fx:id="lnameTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="streetTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="numberTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="418.0" layoutY="388.0" prefHeight="170.0" prefWidth="316.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="163.79998779296875" minWidth="10.0" prefWidth="116.20003662109374" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.59998779296873" minWidth="10.0" prefWidth="209.79996337890626" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="City" />
+            <Label text="County" GridPane.rowIndex="1" />
+            <Label text="Phone" GridPane.rowIndex="2" />
+            <Label text="Date of birth" GridPane.rowIndex="3" />
+            <TextField fx:id="cityTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" />
+            <TextField fx:id="countyTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="phoneTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="birthDateTextField" onAction="#hidelabelNewClient" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="1133.0" layoutY="574.0" mnemonicParsing="false" onMouseClicked="#addButtonPressed" prefHeight="26.0" prefWidth="68.0" text="Add" />
+      <Button layoutX="943.0" layoutY="574.0" mnemonicParsing="false" onAction="#hidelabelNewClient" onMouseClicked="#refreshButtonPressed" prefHeight="26.0" prefWidth="78.0" text="Refresh" />
+      <Button layoutX="1127.0" layoutY="361.0" mnemonicParsing="false" onAction="#hidelabelNewClient" onMouseClicked="#deleteButtonPressed" prefHeight="26.0" prefWidth="68.0" text="Delete" />
+      <Label layoutX="781.0" layoutY="526.0" prefHeight="18.0" prefWidth="134.0" text="Date of registration" />
+      <TextField fx:id="registerDateTextField" layoutX="943.0" layoutY="522.0" onAction="#hidelabelNewClient" prefHeight="26.0" prefWidth="257.0" />
+      <Label fx:id="labelNewClient" layoutX="634.0" layoutY="577.0" text="New client was inserted successfully!" textFill="#770a34" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="597.0" text="Make a new appointment (choose a client from above)" textFill="#770d44">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="632.0" prefHeight="142.0" prefWidth="316.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.19998168945312" minWidth="10.0" prefWidth="114.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="202.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Category" />
+            <Label text="Beautician" GridPane.rowIndex="1" />
+            <Label text="Service" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="beauticianChoiceBox" onMouseClicked="#hideAppoinmentMade" onMousePressed="#hidelabelCannotMadeApp" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="categoryChoiceBox" onAction="#choiceboxPressed" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" />
+            <ComboBox fx:id="serviceChoiceBox" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="418.0" layoutY="634.0" prefHeight="92.0" prefWidth="316.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.5999755859375" minWidth="10.0" prefWidth="100.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.5999755859375" minWidth="10.0" prefWidth="216.00001220703126" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Date" />
+            <Label text="Hour" GridPane.rowIndex="1" />
+            <DatePicker fx:id="datePicker" onMouseClicked="#hideAppoinmentMade" onMousePressed="#hidelabelCannotMadeApp" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="hourChoiceBox" onMouseClicked="#hideAppoinmentMade" onMousePressed="#hidelabelCannotMadeApp" prefHeight="26.0" prefWidth="178.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="656.0" layoutY="748.0" mnemonicParsing="false" onMouseClicked="#saveButtonPressed" text="Save" />
+      <Label fx:id="labelAppointmentMade" layoutX="506.0" layoutY="751.0" onMousePressed="#hideAppoinmentMade" onMouseReleased="#hidelabelCannotMadeApp" prefHeight="20.0" prefWidth="139.0" text="Appointment saved!" textFill="#9a0048" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCannotMadeApp" layoutX="358.0" layoutY="787.0" text="Cannot create appointment! Please choose other options!" textFill="#bd0a0a" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="956.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#historyButtonPressed" text="History" />
+      <Label layoutX="808.0" layoutY="634.0" text="Select a client">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="808.0" layoutY="667.0" text="How much did he spend?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="1040.0" layoutY="667.0" mnemonicParsing="false" onMouseClicked="#findOutButtonPressed" text="Find out" />
+      <Label fx:id="findOutLabel" layoutX="1119.0" layoutY="671.0" text="Label" visible="false" />
+      <Label fx:id="ronLabel" layoutX="1167.0" layoutY="671.0" text=" RON" visible="false" />
+      <Label layoutX="808.0" layoutY="713.0" text="Show a list of all clients who live in a city that doesn't">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="808.0" layoutY="738.0" text="have the street address of the selected client!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="1166.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#findOutStreet" text="Find out" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ServicesController">
+   <children>
+      <TableView fx:id="tableView" layoutX="171.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="170.40002745389938" text="Service name" />
+          <TableColumn fx:id="timeColumn" prefWidth="120.79997253417969" text="Time (min)" />
+            <TableColumn fx:id="priceColumn" prefWidth="156.20001220703125" text="Price (RON)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
