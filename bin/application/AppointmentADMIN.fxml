@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppointmentController">
+   <children>
+      <TableView fx:id="tableView" layoutX="-1.0" prefHeight="371.0" prefWidth="667.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+        <columns>
+             <TableColumn fx:id="clientColumn" prefWidth="147.2000366449356" text="Client" />
+          <TableColumn fx:id="serviceColumn" prefWidth="125.5999755859375" text="Service" />
+          <TableColumn fx:id="beauticianColumn" prefWidth="144.0" text="Beautician" />
+            <TableColumn fx:id="dateColumn" prefWidth="115.20004272460938" text="Date" />
+            <TableColumn fx:id="hourColumn" prefWidth="135.20001220703125" text="Hour" />
+        </columns>
+      </TableView>
+      <Button layoutX="577.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#deleteButtonPressed" text="Delete" />
+      <Button layoutX="444.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#refreshButtonPressed" text="Refresh" />
+      <Label layoutX="31.0" layoutY="392.0" text="See future appointents">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="233.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#seeFutureAppointments" text="Go!" />
+   </children>
+</AnchorPane>

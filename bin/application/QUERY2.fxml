@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" prefHeight="322.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.QUERY2">
+   <columns>
+      <TableColumn fx:id="fnameColumn" prefWidth="120.00002765655518" text="First name" />
+      <TableColumn fx:id="lnameColumn" prefWidth="130.40003967285156" text="Last name" />
+      <TableColumn fx:id="streetColumn" prefWidth="112.79998779296875" text="Street" />
+      <TableColumn fx:id="numberColumn" prefWidth="68.0" text="Number" />
+      <TableColumn fx:id="cityColumn" prefWidth="99.20001220703125" text="City" />
+      <TableColumn fx:id="countyColumn" prefWidth="105.5999755859375" text="County" />
+      <TableColumn fx:id="sexColumn" prefWidth="68.0" text="Sex" />
+      <TableColumn fx:id="phoneColumn" prefWidth="120.0" text="Phone" />
+      <TableColumn fx:id="registerDateColumn" prefWidth="167.199951171875" text="Date of registration" />
+      <TableColumn fx:id="birthDateColumn" minWidth="0.0" prefWidth="176.00003662109384" text="Date of birth" />
+   </columns>
+</TableView>
